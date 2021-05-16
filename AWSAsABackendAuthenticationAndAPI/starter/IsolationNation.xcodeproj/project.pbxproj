@@ -1,0 +1,1276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18D775C122AD944300AE281E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D775C022AD944300AE281E /* AppDelegate.swift */; };
+		18D775C322AD944300AE281E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D775C222AD944300AE281E /* SceneDelegate.swift */; };
+		18D775C722AD944400AE281E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C622AD944400AE281E /* Assets.xcassets */; };
+		18D775CA22AD944400AE281E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C922AD944400AE281E /* Preview Assets.xcassets */; };
+		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
+		572B3D862651349E005DB9CD /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 572B3D852651349E005DB9CD /* schema.graphql */; };
+		577FC40C2651903F00D52727 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FC39A2651903E00D52727 /* AmplifyModels.swift */; };
+		577FC40D2651903F00D52727 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FC39B2651903E00D52727 /* User+Schema.swift */; };
+		577FC40E2651903F00D52727 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FC39C2651903E00D52727 /* User.swift */; };
+		577FC40F2651903F00D52727 /* project-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC39E2651903E00D52727 /* project-config.json */; };
+		577FC4102651903F00D52727 /* local-aws-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC39F2651903E00D52727 /* local-aws-info.json */; };
+		577FC4112651903F00D52727 /* local-env-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3A02651903E00D52727 /* local-env-info.json */; };
+		577FC4122651903F00D52727 /* backend-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3A22651903E00D52727 /* backend-config.json */; };
+		577FC4132651903F00D52727 /* startera40e9c89-cloudformation-template.yml in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3A52651903E00D52727 /* startera40e9c89-cloudformation-template.yml */; };
+		577FC4142651903F00D52727 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3A62651903E00D52727 /* parameters.json */; };
+		577FC4152651903F00D52727 /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3AA2651903E00D52727 /* CustomResources.json */; };
+		577FC4162651903F00D52727 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3AB2651903E00D52727 /* parameters.json */; };
+		577FC4172651903F00D52727 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3AC2651903E00D52727 /* schema.graphql */; };
+		577FC4182651903F00D52727 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3AE2651903E00D52727 /* README.md */; };
+		577FC4192651903F00D52727 /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3B12651903E00D52727 /* CustomResources.json */; };
+		577FC41A2651903F00D52727 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3B22651903E00D52727 /* User.json */; };
+		577FC41B2651903F00D52727 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3B32651903E00D52727 /* parameters.json */; };
+		577FC41C2651903F00D52727 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3B42651903E00D52727 /* schema.graphql */; };
+		577FC41D2651903F00D52727 /* Mutation.updateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3B62651903E00D52727 /* Mutation.updateUser.req.vtl */; };
+		577FC41E2651903F00D52727 /* Query.listUsers.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3B72651903E00D52727 /* Query.listUsers.req.vtl */; };
+		577FC41F2651903F00D52727 /* Query.listUsers.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3B82651903E00D52727 /* Query.listUsers.res.vtl */; };
+		577FC4202651903F00D52727 /* Mutation.updateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3B92651903E00D52727 /* Mutation.updateUser.res.vtl */; };
+		577FC4212651903F00D52727 /* Subscription.onCreateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3BA2651903E00D52727 /* Subscription.onCreateUser.req.vtl */; };
+		577FC4222651903F00D52727 /* Subscription.onDeleteUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3BB2651903E00D52727 /* Subscription.onDeleteUser.res.vtl */; };
+		577FC4232651903F00D52727 /* Subscription.onDeleteUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3BC2651903E00D52727 /* Subscription.onDeleteUser.req.vtl */; };
+		577FC4242651903F00D52727 /* Subscription.onCreateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3BD2651903E00D52727 /* Subscription.onCreateUser.res.vtl */; };
+		577FC4252651903F00D52727 /* Subscription.onUpdateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3BE2651903E00D52727 /* Subscription.onUpdateUser.req.vtl */; };
+		577FC4262651903F00D52727 /* Subscription.onUpdateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3BF2651903E00D52727 /* Subscription.onUpdateUser.res.vtl */; };
+		577FC4272651903F00D52727 /* Mutation.deleteUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C02651903E00D52727 /* Mutation.deleteUser.res.vtl */; };
+		577FC4282651903F00D52727 /* Query.syncUsers.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C12651903E00D52727 /* Query.syncUsers.res.vtl */; };
+		577FC4292651903F00D52727 /* Mutation.createUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C22651903E00D52727 /* Mutation.createUser.req.vtl */; };
+		577FC42A2651903F00D52727 /* Mutation.createUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C32651903E00D52727 /* Mutation.createUser.res.vtl */; };
+		577FC42B2651903F00D52727 /* Query.syncUsers.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C42651903E00D52727 /* Query.syncUsers.req.vtl */; };
+		577FC42C2651903F00D52727 /* Mutation.deleteUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C52651903E00D52727 /* Mutation.deleteUser.req.vtl */; };
+		577FC42D2651903F00D52727 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C62651903E00D52727 /* README.md */; };
+		577FC42E2651903F00D52727 /* Query.getUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C72651903E00D52727 /* Query.getUser.req.vtl */; };
+		577FC42F2651903F00D52727 /* Query.getUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3C82651903E00D52727 /* Query.getUser.res.vtl */; };
+		577FC4302651903F00D52727 /* cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3CB2651903E00D52727 /* cloudformation-template.json */; };
+		577FC4312651903F00D52727 /* transform.conf.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3CC2651903E00D52727 /* transform.conf.json */; };
+		577FC4322651903F00D52727 /* tags.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3CD2651903F00D52727 /* tags.json */; };
+		577FC4332651903F00D52727 /* amplify-meta.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3CE2651903F00D52727 /* amplify-meta.json */; };
+		577FC4342651903F00D52727 /* cli.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3CF2651903F00D52727 /* cli.json */; };
+		577FC4352651903F00D52727 /* backend-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3D12651903F00D52727 /* backend-config.json */; };
+		577FC4362651903F00D52727 /* startera40e9c89-cloudformation-template.yml in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3D42651903F00D52727 /* startera40e9c89-cloudformation-template.yml */; };
+		577FC4372651903F00D52727 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3D52651903F00D52727 /* parameters.json */; };
+		577FC4382651903F00D52727 /* nested-cloudformation-stack.yml in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3D72651903F00D52727 /* nested-cloudformation-stack.yml */; };
+		577FC4392651903F00D52727 /* startera40e9c89-cloudformation-template.yml in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3DB2651903F00D52727 /* startera40e9c89-cloudformation-template.yml */; };
+		577FC43A2651903F00D52727 /* nested-cloudformation-stack.yml in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3DD2651903F00D52727 /* nested-cloudformation-stack.yml */; };
+		577FC43B2651903F00D52727 /* cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3E12651903F00D52727 /* cloudformation-template.json */; };
+		577FC43C2651903F00D52727 /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3E52651903F00D52727 /* CustomResources.json */; };
+		577FC43D2651903F00D52727 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3E62651903F00D52727 /* parameters.json */; };
+		577FC43E2651903F00D52727 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3E72651903F00D52727 /* schema.graphql */; };
+		577FC43F2651903F00D52727 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3E92651903F00D52727 /* README.md */; };
+		577FC4402651903F00D52727 /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3EC2651903F00D52727 /* CustomResources.json */; };
+		577FC4412651903F00D52727 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3ED2651903F00D52727 /* User.json */; };
+		577FC4422651903F00D52727 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3EE2651903F00D52727 /* parameters.json */; };
+		577FC4432651903F00D52727 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3EF2651903F00D52727 /* schema.graphql */; };
+		577FC4442651903F00D52727 /* Mutation.updateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F12651903F00D52727 /* Mutation.updateUser.req.vtl */; };
+		577FC4452651903F00D52727 /* Query.listUsers.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F22651903F00D52727 /* Query.listUsers.req.vtl */; };
+		577FC4462651903F00D52727 /* Query.listUsers.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F32651903F00D52727 /* Query.listUsers.res.vtl */; };
+		577FC4472651903F00D52727 /* Mutation.updateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F42651903F00D52727 /* Mutation.updateUser.res.vtl */; };
+		577FC4482651903F00D52727 /* Subscription.onCreateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F52651903F00D52727 /* Subscription.onCreateUser.req.vtl */; };
+		577FC4492651903F00D52727 /* Subscription.onDeleteUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F62651903F00D52727 /* Subscription.onDeleteUser.res.vtl */; };
+		577FC44A2651903F00D52727 /* Subscription.onDeleteUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F72651903F00D52727 /* Subscription.onDeleteUser.req.vtl */; };
+		577FC44B2651903F00D52727 /* Subscription.onCreateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F82651903F00D52727 /* Subscription.onCreateUser.res.vtl */; };
+		577FC44C2651903F00D52727 /* Subscription.onUpdateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3F92651903F00D52727 /* Subscription.onUpdateUser.req.vtl */; };
+		577FC44D2651903F00D52727 /* Subscription.onUpdateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3FA2651903F00D52727 /* Subscription.onUpdateUser.res.vtl */; };
+		577FC44E2651903F00D52727 /* Mutation.deleteUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3FB2651903F00D52727 /* Mutation.deleteUser.res.vtl */; };
+		577FC44F2651903F00D52727 /* Query.syncUsers.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3FC2651903F00D52727 /* Query.syncUsers.res.vtl */; };
+		577FC4502651903F00D52727 /* Mutation.createUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3FD2651903F00D52727 /* Mutation.createUser.req.vtl */; };
+		577FC4512651903F00D52727 /* Mutation.createUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3FE2651903F00D52727 /* Mutation.createUser.res.vtl */; };
+		577FC4522651903F00D52727 /* Query.syncUsers.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC3FF2651903F00D52727 /* Query.syncUsers.req.vtl */; };
+		577FC4532651903F00D52727 /* Mutation.deleteUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC4002651903F00D52727 /* Mutation.deleteUser.req.vtl */; };
+		577FC4542651903F00D52727 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 577FC4012651903F00D52727 /* README.md */; };
+		577FC4552651903F00D52727 /* Query.getUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC4022651903F00D52727 /* Query.getUser.req.vtl */; };
+		577FC4562651903F00D52727 /* Query.getUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 577FC4032651903F00D52727 /* Query.getUser.res.vtl */; };
+		577FC4572651903F00D52727 /* cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC4062651903F00D52727 /* cloudformation-template.json */; };
+		577FC4582651903F00D52727 /* transform.conf.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC4072651903F00D52727 /* transform.conf.json */; };
+		577FC4592651903F00D52727 /* tags.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC4082651903F00D52727 /* tags.json */; };
+		577FC45A2651903F00D52727 /* amplify-meta.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC4092651903F00D52727 /* amplify-meta.json */; };
+		577FC45B2651903F00D52727 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 577FC40A2651903F00D52727 /* README.md */; };
+		577FC45C2651903F00D52727 /* team-provider-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 577FC40B2651903F00D52727 /* team-provider-info.json */; };
+		676DC40447944D3F5A85F0D4 /* Pods_IsolationNation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331F1FB98200A30AD5DB2D8 /* Pods_IsolationNation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C3C307E539F14902A2246339 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE443750D454081B1058CF1 /* awsconfiguration.json */; };
+		E2107A0B247B12C900C1DE9B /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2107A0A247B12C900C1DE9B /* Loading.swift */; };
+		E2107A0D247B12F000C1DE9B /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2107A0C247B12F000C1DE9B /* ViewModelFactory.swift */; };
+		E2107A0F247B15D000C1DE9B /* MessageDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2107A0E247B15D000C1DE9B /* MessageDetailsHeader.swift */; };
+		E217EA5F24B66D54001009C6 /* SignUpOrSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA5724B66D53001009C6 /* SignUpOrSignInView.swift */; };
+		E217EA6024B66D54001009C6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA5824B66D54001009C6 /* SignUpView.swift */; };
+		E217EA6124B66D54001009C6 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA5924B66D54001009C6 /* AuthenticationService.swift */; };
+		E217EA6224B66D54001009C6 /* SignUpOrSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA5A24B66D54001009C6 /* SignUpOrSignInViewModel.swift */; };
+		E217EA6324B66D54001009C6 /* AuthenticationStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA5B24B66D54001009C6 /* AuthenticationStateView.swift */; };
+		E217EA6424B66D54001009C6 /* AwaitingConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA5C24B66D54001009C6 /* AwaitingConfirmationView.swift */; };
+		E217EA6524B66D54001009C6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA5D24B66D54001009C6 /* SignInView.swift */; };
+		E217EA6624B66D54001009C6 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA5E24B66D54001009C6 /* UserSession.swift */; };
+		E217EA6824B66EF3001009C6 /* SetPostcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA6724B66EF3001009C6 /* SetPostcodeView.swift */; };
+		E217EA6A24B67064001009C6 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EA6924B67064001009C6 /* PrimaryButton.swift */; };
+		E25FBD8F244F274E008BFD93 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25FBD8E244F274E008BFD93 /* Logger.swift */; };
+		E268545A24434922006E7908 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E268545924434922006E7908 /* MessagesView.swift */; };
+		E27F9692245FE3060060948D /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F9691245FE3060060948D /* Loadable.swift */; };
+		E29191F9244C9180001969DA /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29191F8244C9180001969DA /* UserAvatar.swift */; };
+		E29191FB244C96EB001969DA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29191FA244C96EB001969DA /* Color.swift */; };
+		E29191FD244E12BC001969DA /* ReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29191FC244E12BC001969DA /* ReplyView.swift */; };
+		E29191FF244E14A8001969DA /* RepliesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29191FE244E14A8001969DA /* RepliesScreenViewModel.swift */; };
+		E2A8F4C824484C1200452EE9 /* ReplyInputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F4C724484C1200452EE9 /* ReplyInputBar.swift */; };
+		E2A8F4CA244990E700452EE9 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F4C9244990E700452EE9 /* MessageView.swift */; };
+		E2A8F4CF244B328B00452EE9 /* ThreadsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F4CE244B328B00452EE9 /* ThreadsScreenViewModel.swift */; };
+		E2A8F4D1244B3CC700452EE9 /* ThreadsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F4D0244B3CC700452EE9 /* ThreadsScreen.swift */; };
+		E2A8F4D6244B60A100452EE9 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F4D5244B60A100452EE9 /* HomeScreenViewModel.swift */; };
+		E2A8F4D8244B62C900452EE9 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F4D7244B62C900452EE9 /* HomeScreen.swift */; };
+		E2A8F4E0244B88F100452EE9 /* String+Postcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F4DF244B88F100452EE9 /* String+Postcode.swift */; };
+		E2A8F4E2244B941F00452EE9 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F4E1244B941F00452EE9 /* ErrorTypes.swift */; };
+		E2D649DA24448C7400CD67BF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D649D924448C7400CD67BF /* RootView.swift */; };
+		E2D649E02445A37100CD67BF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D649DF2445A37100CD67BF /* ActivityIndicator.swift */; };
+		E2D649E32446ED3300CD67BF /* MessagesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D649E22446ED3300CD67BF /* MessagesScreen.swift */; };
+		E2D649E52446ED9200CD67BF /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D649E42446ED9200CD67BF /* KeyboardAdaptive.swift */; };
+		E2D649E72446F73300CD67BF /* MessageInputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D649E62446F73300CD67BF /* MessageInputBar.swift */; };
+		E2D649EA2448448E00CD67BF /* RepliesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D649E92448448E00CD67BF /* RepliesScreen.swift */; };
+		E2D649EC244844EE00CD67BF /* RepliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D649EB244844EE00CD67BF /* RepliesView.swift */; };
+		E2FC7E7024432F0800D5711A /* MessagesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC7E6F24432F0800D5711A /* MessagesScreenViewModel.swift */; };
+		FCE3D2ED05104F0389DD2EDC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB14C48E38945A9AA1C3AB8 /* amplifyconfiguration.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		571197DF2649B145006DBD93 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		18D775BD22AD944300AE281E /* Isolation Nation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Isolation Nation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D775C022AD944300AE281E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18D775C222AD944300AE281E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18D775C622AD944400AE281E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18D775C922AD944400AE281E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31422E383F5B34CEB2C77ADB /* Pods-IsolationNation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsolationNation.release.xcconfig"; path = "Target Support Files/Pods-IsolationNation/Pods-IsolationNation.release.xcconfig"; sourceTree = "<group>"; };
+		572B3D852651349E005DB9CD /* schema.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/starter/schema.graphql; sourceTree = SOURCE_ROOT; };
+		577FC39A2651903E00D52727 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		577FC39B2651903E00D52727 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
+		577FC39C2651903E00D52727 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		577FC39E2651903E00D52727 /* project-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "project-config.json"; sourceTree = "<group>"; };
+		577FC39F2651903E00D52727 /* local-aws-info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "local-aws-info.json"; sourceTree = "<group>"; };
+		577FC3A02651903E00D52727 /* local-env-info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "local-env-info.json"; sourceTree = "<group>"; };
+		577FC3A22651903E00D52727 /* backend-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "backend-config.json"; sourceTree = "<group>"; };
+		577FC3A52651903E00D52727 /* startera40e9c89-cloudformation-template.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "startera40e9c89-cloudformation-template.yml"; sourceTree = "<group>"; };
+		577FC3A62651903E00D52727 /* parameters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		577FC3AA2651903E00D52727 /* CustomResources.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		577FC3AB2651903E00D52727 /* parameters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		577FC3AC2651903E00D52727 /* schema.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
+		577FC3AE2651903E00D52727 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		577FC3B12651903E00D52727 /* CustomResources.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		577FC3B22651903E00D52727 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		577FC3B32651903E00D52727 /* parameters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		577FC3B42651903E00D52727 /* schema.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
+		577FC3B62651903E00D52727 /* Mutation.updateUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.updateUser.req.vtl; sourceTree = "<group>"; };
+		577FC3B72651903E00D52727 /* Query.listUsers.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.listUsers.req.vtl; sourceTree = "<group>"; };
+		577FC3B82651903E00D52727 /* Query.listUsers.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.listUsers.res.vtl; sourceTree = "<group>"; };
+		577FC3B92651903E00D52727 /* Mutation.updateUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.updateUser.res.vtl; sourceTree = "<group>"; };
+		577FC3BA2651903E00D52727 /* Subscription.onCreateUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onCreateUser.req.vtl; sourceTree = "<group>"; };
+		577FC3BB2651903E00D52727 /* Subscription.onDeleteUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onDeleteUser.res.vtl; sourceTree = "<group>"; };
+		577FC3BC2651903E00D52727 /* Subscription.onDeleteUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onDeleteUser.req.vtl; sourceTree = "<group>"; };
+		577FC3BD2651903E00D52727 /* Subscription.onCreateUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onCreateUser.res.vtl; sourceTree = "<group>"; };
+		577FC3BE2651903E00D52727 /* Subscription.onUpdateUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onUpdateUser.req.vtl; sourceTree = "<group>"; };
+		577FC3BF2651903E00D52727 /* Subscription.onUpdateUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onUpdateUser.res.vtl; sourceTree = "<group>"; };
+		577FC3C02651903E00D52727 /* Mutation.deleteUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.deleteUser.res.vtl; sourceTree = "<group>"; };
+		577FC3C12651903E00D52727 /* Query.syncUsers.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.syncUsers.res.vtl; sourceTree = "<group>"; };
+		577FC3C22651903E00D52727 /* Mutation.createUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.createUser.req.vtl; sourceTree = "<group>"; };
+		577FC3C32651903E00D52727 /* Mutation.createUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.createUser.res.vtl; sourceTree = "<group>"; };
+		577FC3C42651903E00D52727 /* Query.syncUsers.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.syncUsers.req.vtl; sourceTree = "<group>"; };
+		577FC3C52651903E00D52727 /* Mutation.deleteUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.deleteUser.req.vtl; sourceTree = "<group>"; };
+		577FC3C62651903E00D52727 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		577FC3C72651903E00D52727 /* Query.getUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.getUser.req.vtl; sourceTree = "<group>"; };
+		577FC3C82651903E00D52727 /* Query.getUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.getUser.res.vtl; sourceTree = "<group>"; };
+		577FC3CB2651903E00D52727 /* cloudformation-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cloudformation-template.json"; sourceTree = "<group>"; };
+		577FC3CC2651903E00D52727 /* transform.conf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transform.conf.json; sourceTree = "<group>"; };
+		577FC3CD2651903F00D52727 /* tags.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tags.json; sourceTree = "<group>"; };
+		577FC3CE2651903F00D52727 /* amplify-meta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "amplify-meta.json"; sourceTree = "<group>"; };
+		577FC3CF2651903F00D52727 /* cli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cli.json; sourceTree = "<group>"; };
+		577FC3D12651903F00D52727 /* backend-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "backend-config.json"; sourceTree = "<group>"; };
+		577FC3D42651903F00D52727 /* startera40e9c89-cloudformation-template.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "startera40e9c89-cloudformation-template.yml"; sourceTree = "<group>"; };
+		577FC3D52651903F00D52727 /* parameters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		577FC3D72651903F00D52727 /* nested-cloudformation-stack.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "nested-cloudformation-stack.yml"; sourceTree = "<group>"; };
+		577FC3DB2651903F00D52727 /* startera40e9c89-cloudformation-template.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "startera40e9c89-cloudformation-template.yml"; sourceTree = "<group>"; };
+		577FC3DD2651903F00D52727 /* nested-cloudformation-stack.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "nested-cloudformation-stack.yml"; sourceTree = "<group>"; };
+		577FC3E12651903F00D52727 /* cloudformation-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cloudformation-template.json"; sourceTree = "<group>"; };
+		577FC3E52651903F00D52727 /* CustomResources.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		577FC3E62651903F00D52727 /* parameters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		577FC3E72651903F00D52727 /* schema.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
+		577FC3E92651903F00D52727 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		577FC3EC2651903F00D52727 /* CustomResources.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		577FC3ED2651903F00D52727 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		577FC3EE2651903F00D52727 /* parameters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		577FC3EF2651903F00D52727 /* schema.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
+		577FC3F12651903F00D52727 /* Mutation.updateUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.updateUser.req.vtl; sourceTree = "<group>"; };
+		577FC3F22651903F00D52727 /* Query.listUsers.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.listUsers.req.vtl; sourceTree = "<group>"; };
+		577FC3F32651903F00D52727 /* Query.listUsers.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.listUsers.res.vtl; sourceTree = "<group>"; };
+		577FC3F42651903F00D52727 /* Mutation.updateUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.updateUser.res.vtl; sourceTree = "<group>"; };
+		577FC3F52651903F00D52727 /* Subscription.onCreateUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onCreateUser.req.vtl; sourceTree = "<group>"; };
+		577FC3F62651903F00D52727 /* Subscription.onDeleteUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onDeleteUser.res.vtl; sourceTree = "<group>"; };
+		577FC3F72651903F00D52727 /* Subscription.onDeleteUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onDeleteUser.req.vtl; sourceTree = "<group>"; };
+		577FC3F82651903F00D52727 /* Subscription.onCreateUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onCreateUser.res.vtl; sourceTree = "<group>"; };
+		577FC3F92651903F00D52727 /* Subscription.onUpdateUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onUpdateUser.req.vtl; sourceTree = "<group>"; };
+		577FC3FA2651903F00D52727 /* Subscription.onUpdateUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Subscription.onUpdateUser.res.vtl; sourceTree = "<group>"; };
+		577FC3FB2651903F00D52727 /* Mutation.deleteUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.deleteUser.res.vtl; sourceTree = "<group>"; };
+		577FC3FC2651903F00D52727 /* Query.syncUsers.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.syncUsers.res.vtl; sourceTree = "<group>"; };
+		577FC3FD2651903F00D52727 /* Mutation.createUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.createUser.req.vtl; sourceTree = "<group>"; };
+		577FC3FE2651903F00D52727 /* Mutation.createUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.createUser.res.vtl; sourceTree = "<group>"; };
+		577FC3FF2651903F00D52727 /* Query.syncUsers.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.syncUsers.req.vtl; sourceTree = "<group>"; };
+		577FC4002651903F00D52727 /* Mutation.deleteUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mutation.deleteUser.req.vtl; sourceTree = "<group>"; };
+		577FC4012651903F00D52727 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		577FC4022651903F00D52727 /* Query.getUser.req.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.getUser.req.vtl; sourceTree = "<group>"; };
+		577FC4032651903F00D52727 /* Query.getUser.res.vtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Query.getUser.res.vtl; sourceTree = "<group>"; };
+		577FC4062651903F00D52727 /* cloudformation-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cloudformation-template.json"; sourceTree = "<group>"; };
+		577FC4072651903F00D52727 /* transform.conf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transform.conf.json; sourceTree = "<group>"; };
+		577FC4082651903F00D52727 /* tags.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tags.json; sourceTree = "<group>"; };
+		577FC4092651903F00D52727 /* amplify-meta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "amplify-meta.json"; sourceTree = "<group>"; };
+		577FC40A2651903F00D52727 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		577FC40B2651903F00D52727 /* team-provider-info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team-provider-info.json"; sourceTree = "<group>"; };
+		7F187FF1CDED7FF52DCEA798 /* Pods-IsolationNation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsolationNation.debug.xcconfig"; path = "Target Support Files/Pods-IsolationNation/Pods-IsolationNation.debug.xcconfig"; sourceTree = "<group>"; };
+		9FB14C48E38945A9AA1C3AB8 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		BC9B0F39362E4855BDD663DA /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		C331F1FB98200A30AD5DB2D8 /* Pods_IsolationNation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsolationNation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2107A0A247B12C900C1DE9B /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		E2107A0C247B12F000C1DE9B /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		E2107A0E247B15D000C1DE9B /* MessageDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailsHeader.swift; sourceTree = "<group>"; };
+		E217EA5724B66D53001009C6 /* SignUpOrSignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpOrSignInView.swift; sourceTree = "<group>"; };
+		E217EA5824B66D54001009C6 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E217EA5924B66D54001009C6 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationService.swift; path = Authentication/AuthenticationService.swift; sourceTree = "<group>"; };
+		E217EA5A24B66D54001009C6 /* SignUpOrSignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpOrSignInViewModel.swift; sourceTree = "<group>"; };
+		E217EA5B24B66D54001009C6 /* AuthenticationStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationStateView.swift; sourceTree = "<group>"; };
+		E217EA5C24B66D54001009C6 /* AwaitingConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwaitingConfirmationView.swift; sourceTree = "<group>"; };
+		E217EA5D24B66D54001009C6 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E217EA5E24B66D54001009C6 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserSession.swift; path = Authentication/UserSession.swift; sourceTree = "<group>"; };
+		E217EA6724B66EF3001009C6 /* SetPostcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPostcodeView.swift; sourceTree = "<group>"; };
+		E217EA6924B67064001009C6 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		E25FBD8E244F274E008BFD93 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E268545924434922006E7908 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessagesView.swift; path = IsolationNation/Messages/MessagesView.swift; sourceTree = SOURCE_ROOT; };
+		E27F9691245FE3060060948D /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		E29191F8244C9180001969DA /* UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
+		E29191FA244C96EB001969DA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E29191FC244E12BC001969DA /* ReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyView.swift; sourceTree = "<group>"; };
+		E29191FE244E14A8001969DA /* RepliesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepliesScreenViewModel.swift; path = Replies/RepliesScreenViewModel.swift; sourceTree = "<group>"; };
+		E2A8F4C724484C1200452EE9 /* ReplyInputBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyInputBar.swift; sourceTree = "<group>"; };
+		E2A8F4C9244990E700452EE9 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		E2A8F4CE244B328B00452EE9 /* ThreadsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThreadsScreenViewModel.swift; path = Threads/ThreadsScreenViewModel.swift; sourceTree = "<group>"; };
+		E2A8F4D0244B3CC700452EE9 /* ThreadsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsScreen.swift; sourceTree = "<group>"; };
+		E2A8F4D5244B60A100452EE9 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeScreenViewModel.swift; path = Home/HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		E2A8F4D7244B62C900452EE9 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E2A8F4DF244B88F100452EE9 /* String+Postcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Postcode.swift"; sourceTree = "<group>"; };
+		E2A8F4E1244B941F00452EE9 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
+		E2D649D924448C7400CD67BF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		E2D649DF2445A37100CD67BF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E2D649E22446ED3300CD67BF /* MessagesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesScreen.swift; sourceTree = "<group>"; };
+		E2D649E42446ED9200CD67BF /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		E2D649E62446F73300CD67BF /* MessageInputBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputBar.swift; sourceTree = "<group>"; };
+		E2D649E92448448E00CD67BF /* RepliesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepliesScreen.swift; sourceTree = "<group>"; };
+		E2D649EB244844EE00CD67BF /* RepliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepliesView.swift; sourceTree = "<group>"; };
+		E2FC7E6F24432F0800D5711A /* MessagesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessagesScreenViewModel.swift; path = Messages/MessagesScreenViewModel.swift; sourceTree = "<group>"; };
+		FCE443750D454081B1058CF1 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18D775BA22AD944300AE281E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676DC40447944D3F5A85F0D4 /* Pods_IsolationNation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12F9C52A7AF841708EF9D0E4 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				BC9B0F39362E4855BDD663DA /* amplifytools.xcconfig */,
+				572B3D852651349E005DB9CD /* schema.graphql */,
+				9FB14C48E38945A9AA1C3AB8 /* amplifyconfiguration.json */,
+				FCE443750D454081B1058CF1 /* awsconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		18D775B422AD944300AE281E = {
+			isa = PBXGroup;
+			children = (
+				12F9C52A7AF841708EF9D0E4 /* AmplifyConfig */,
+				18D775BF22AD944300AE281E /* IsolationNation */,
+				18D775BE22AD944300AE281E /* Products */,
+				683661122439A23DD01A106C /* Pods */,
+				A2AF4FE29F66F8985E8F65B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18D775BE22AD944300AE281E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D775BD22AD944300AE281E /* Isolation Nation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D775BF22AD944300AE281E /* IsolationNation */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8F4D4244B5FD800452EE9 /* Home */,
+				E2A8F4CB244B2F6300452EE9 /* Threads */,
+				E2D649E82448446A00CD67BF /* Replies */,
+				E2D649E12446ED2200CD67BF /* Messages */,
+				E2D649DC2445A29600CD67BF /* Generic */,
+				E2D649D424448BE700CD67BF /* Authentication */,
+				18D775C022AD944300AE281E /* AppDelegate.swift */,
+				577FC3972651903E00D52727 /* amplify */,
+				18D775C222AD944300AE281E /* SceneDelegate.swift */,
+				E2D649D924448C7400CD67BF /* RootView.swift */,
+				E25FBD8E244F274E008BFD93 /* Logger.swift */,
+				E217EA5E24B66D54001009C6 /* UserSession.swift */,
+				E217EA5924B66D54001009C6 /* AuthenticationService.swift */,
+				E2A8F4D5244B60A100452EE9 /* HomeScreenViewModel.swift */,
+				E2A8F4CE244B328B00452EE9 /* ThreadsScreenViewModel.swift */,
+				E29191FE244E14A8001969DA /* RepliesScreenViewModel.swift */,
+				E2FC7E6F24432F0800D5711A /* MessagesScreenViewModel.swift */,
+				18D775C622AD944400AE281E /* Assets.xcassets */,
+				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
+				18D775CE22AD944400AE281E /* Info.plist */,
+				18D775C822AD944400AE281E /* Preview Content */,
+			);
+			path = IsolationNation;
+			sourceTree = "<group>";
+		};
+		18D775C822AD944400AE281E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18D775C922AD944400AE281E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		577FC3972651903E00D52727 /* amplify */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3982651903E00D52727 /* generated */,
+				577FC39D2651903E00D52727 /* .config */,
+				577FC3A12651903E00D52727 /* #current-cloud-backend */,
+				577FC3CF2651903F00D52727 /* cli.json */,
+				577FC3D02651903F00D52727 /* backend */,
+				577FC40A2651903F00D52727 /* README.md */,
+				577FC40B2651903F00D52727 /* team-provider-info.json */,
+			);
+			path = amplify;
+			sourceTree = SOURCE_ROOT;
+		};
+		577FC3982651903E00D52727 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3992651903E00D52727 /* models */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
+		577FC3992651903E00D52727 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				577FC39A2651903E00D52727 /* AmplifyModels.swift */,
+				577FC39B2651903E00D52727 /* User+Schema.swift */,
+				577FC39C2651903E00D52727 /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		577FC39D2651903E00D52727 /* .config */ = {
+			isa = PBXGroup;
+			children = (
+				577FC39E2651903E00D52727 /* project-config.json */,
+				577FC39F2651903E00D52727 /* local-aws-info.json */,
+				577FC3A02651903E00D52727 /* local-env-info.json */,
+			);
+			path = .config;
+			sourceTree = "<group>";
+		};
+		577FC3A12651903E00D52727 /* #current-cloud-backend */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3A22651903E00D52727 /* backend-config.json */,
+				577FC3A32651903E00D52727 /* auth */,
+				577FC3A72651903E00D52727 /* api */,
+				577FC3CD2651903F00D52727 /* tags.json */,
+				577FC3CE2651903F00D52727 /* amplify-meta.json */,
+			);
+			path = "#current-cloud-backend";
+			sourceTree = "<group>";
+		};
+		577FC3A32651903E00D52727 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3A42651903E00D52727 /* startera40e9c89 */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		577FC3A42651903E00D52727 /* startera40e9c89 */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3A52651903E00D52727 /* startera40e9c89-cloudformation-template.yml */,
+				577FC3A62651903E00D52727 /* parameters.json */,
+			);
+			path = startera40e9c89;
+			sourceTree = "<group>";
+		};
+		577FC3A72651903E00D52727 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3A82651903E00D52727 /* starter */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		577FC3A82651903E00D52727 /* starter */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3A92651903E00D52727 /* stacks */,
+				577FC3AB2651903E00D52727 /* parameters.json */,
+				577FC3AC2651903E00D52727 /* schema.graphql */,
+				577FC3AD2651903E00D52727 /* resolvers */,
+				577FC3AF2651903E00D52727 /* build */,
+				577FC3CC2651903E00D52727 /* transform.conf.json */,
+			);
+			path = starter;
+			sourceTree = "<group>";
+		};
+		577FC3A92651903E00D52727 /* stacks */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3AA2651903E00D52727 /* CustomResources.json */,
+			);
+			path = stacks;
+			sourceTree = "<group>";
+		};
+		577FC3AD2651903E00D52727 /* resolvers */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3AE2651903E00D52727 /* README.md */,
+			);
+			path = resolvers;
+			sourceTree = "<group>";
+		};
+		577FC3AF2651903E00D52727 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3B02651903E00D52727 /* stacks */,
+				577FC3B32651903E00D52727 /* parameters.json */,
+				577FC3B42651903E00D52727 /* schema.graphql */,
+				577FC3B52651903E00D52727 /* resolvers */,
+				577FC3C92651903E00D52727 /* pipelineFunctions */,
+				577FC3CA2651903E00D52727 /* functions */,
+				577FC3CB2651903E00D52727 /* cloudformation-template.json */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		577FC3B02651903E00D52727 /* stacks */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3B12651903E00D52727 /* CustomResources.json */,
+				577FC3B22651903E00D52727 /* User.json */,
+			);
+			path = stacks;
+			sourceTree = "<group>";
+		};
+		577FC3B52651903E00D52727 /* resolvers */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3B62651903E00D52727 /* Mutation.updateUser.req.vtl */,
+				577FC3B72651903E00D52727 /* Query.listUsers.req.vtl */,
+				577FC3B82651903E00D52727 /* Query.listUsers.res.vtl */,
+				577FC3B92651903E00D52727 /* Mutation.updateUser.res.vtl */,
+				577FC3BA2651903E00D52727 /* Subscription.onCreateUser.req.vtl */,
+				577FC3BB2651903E00D52727 /* Subscription.onDeleteUser.res.vtl */,
+				577FC3BC2651903E00D52727 /* Subscription.onDeleteUser.req.vtl */,
+				577FC3BD2651903E00D52727 /* Subscription.onCreateUser.res.vtl */,
+				577FC3BE2651903E00D52727 /* Subscription.onUpdateUser.req.vtl */,
+				577FC3BF2651903E00D52727 /* Subscription.onUpdateUser.res.vtl */,
+				577FC3C02651903E00D52727 /* Mutation.deleteUser.res.vtl */,
+				577FC3C12651903E00D52727 /* Query.syncUsers.res.vtl */,
+				577FC3C22651903E00D52727 /* Mutation.createUser.req.vtl */,
+				577FC3C32651903E00D52727 /* Mutation.createUser.res.vtl */,
+				577FC3C42651903E00D52727 /* Query.syncUsers.req.vtl */,
+				577FC3C52651903E00D52727 /* Mutation.deleteUser.req.vtl */,
+				577FC3C62651903E00D52727 /* README.md */,
+				577FC3C72651903E00D52727 /* Query.getUser.req.vtl */,
+				577FC3C82651903E00D52727 /* Query.getUser.res.vtl */,
+			);
+			path = resolvers;
+			sourceTree = "<group>";
+		};
+		577FC3C92651903E00D52727 /* pipelineFunctions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pipelineFunctions;
+			sourceTree = "<group>";
+		};
+		577FC3CA2651903E00D52727 /* functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = functions;
+			sourceTree = "<group>";
+		};
+		577FC3D02651903F00D52727 /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3D12651903F00D52727 /* backend-config.json */,
+				577FC3D22651903F00D52727 /* auth */,
+				577FC3D62651903F00D52727 /* awscloudformation */,
+				577FC3E22651903F00D52727 /* api */,
+				577FC4082651903F00D52727 /* tags.json */,
+				577FC4092651903F00D52727 /* amplify-meta.json */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		577FC3D22651903F00D52727 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3D32651903F00D52727 /* startera40e9c89 */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		577FC3D32651903F00D52727 /* startera40e9c89 */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3D42651903F00D52727 /* startera40e9c89-cloudformation-template.yml */,
+				577FC3D52651903F00D52727 /* parameters.json */,
+			);
+			path = startera40e9c89;
+			sourceTree = "<group>";
+		};
+		577FC3D62651903F00D52727 /* awscloudformation */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3D72651903F00D52727 /* nested-cloudformation-stack.yml */,
+				577FC3D82651903F00D52727 /* build */,
+			);
+			path = awscloudformation;
+			sourceTree = "<group>";
+		};
+		577FC3D82651903F00D52727 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3D92651903F00D52727 /* auth */,
+				577FC3DC2651903F00D52727 /* awscloudformation */,
+				577FC3DE2651903F00D52727 /* api */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		577FC3D92651903F00D52727 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3DA2651903F00D52727 /* startera40e9c89 */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		577FC3DA2651903F00D52727 /* startera40e9c89 */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3DB2651903F00D52727 /* startera40e9c89-cloudformation-template.yml */,
+			);
+			path = startera40e9c89;
+			sourceTree = "<group>";
+		};
+		577FC3DC2651903F00D52727 /* awscloudformation */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3DD2651903F00D52727 /* nested-cloudformation-stack.yml */,
+			);
+			path = awscloudformation;
+			sourceTree = "<group>";
+		};
+		577FC3DE2651903F00D52727 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3DF2651903F00D52727 /* starter */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		577FC3DF2651903F00D52727 /* starter */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3E02651903F00D52727 /* build */,
+			);
+			path = starter;
+			sourceTree = "<group>";
+		};
+		577FC3E02651903F00D52727 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3E12651903F00D52727 /* cloudformation-template.json */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		577FC3E22651903F00D52727 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3E32651903F00D52727 /* starter */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		577FC3E32651903F00D52727 /* starter */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3E42651903F00D52727 /* stacks */,
+				577FC3E62651903F00D52727 /* parameters.json */,
+				577FC3E72651903F00D52727 /* schema.graphql */,
+				577FC3E82651903F00D52727 /* resolvers */,
+				577FC3EA2651903F00D52727 /* build */,
+				577FC4072651903F00D52727 /* transform.conf.json */,
+			);
+			path = starter;
+			sourceTree = "<group>";
+		};
+		577FC3E42651903F00D52727 /* stacks */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3E52651903F00D52727 /* CustomResources.json */,
+			);
+			path = stacks;
+			sourceTree = "<group>";
+		};
+		577FC3E82651903F00D52727 /* resolvers */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3E92651903F00D52727 /* README.md */,
+			);
+			path = resolvers;
+			sourceTree = "<group>";
+		};
+		577FC3EA2651903F00D52727 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3EB2651903F00D52727 /* stacks */,
+				577FC3EE2651903F00D52727 /* parameters.json */,
+				577FC3EF2651903F00D52727 /* schema.graphql */,
+				577FC3F02651903F00D52727 /* resolvers */,
+				577FC4042651903F00D52727 /* pipelineFunctions */,
+				577FC4052651903F00D52727 /* functions */,
+				577FC4062651903F00D52727 /* cloudformation-template.json */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		577FC3EB2651903F00D52727 /* stacks */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3EC2651903F00D52727 /* CustomResources.json */,
+				577FC3ED2651903F00D52727 /* User.json */,
+			);
+			path = stacks;
+			sourceTree = "<group>";
+		};
+		577FC3F02651903F00D52727 /* resolvers */ = {
+			isa = PBXGroup;
+			children = (
+				577FC3F12651903F00D52727 /* Mutation.updateUser.req.vtl */,
+				577FC3F22651903F00D52727 /* Query.listUsers.req.vtl */,
+				577FC3F32651903F00D52727 /* Query.listUsers.res.vtl */,
+				577FC3F42651903F00D52727 /* Mutation.updateUser.res.vtl */,
+				577FC3F52651903F00D52727 /* Subscription.onCreateUser.req.vtl */,
+				577FC3F62651903F00D52727 /* Subscription.onDeleteUser.res.vtl */,
+				577FC3F72651903F00D52727 /* Subscription.onDeleteUser.req.vtl */,
+				577FC3F82651903F00D52727 /* Subscription.onCreateUser.res.vtl */,
+				577FC3F92651903F00D52727 /* Subscription.onUpdateUser.req.vtl */,
+				577FC3FA2651903F00D52727 /* Subscription.onUpdateUser.res.vtl */,
+				577FC3FB2651903F00D52727 /* Mutation.deleteUser.res.vtl */,
+				577FC3FC2651903F00D52727 /* Query.syncUsers.res.vtl */,
+				577FC3FD2651903F00D52727 /* Mutation.createUser.req.vtl */,
+				577FC3FE2651903F00D52727 /* Mutation.createUser.res.vtl */,
+				577FC3FF2651903F00D52727 /* Query.syncUsers.req.vtl */,
+				577FC4002651903F00D52727 /* Mutation.deleteUser.req.vtl */,
+				577FC4012651903F00D52727 /* README.md */,
+				577FC4022651903F00D52727 /* Query.getUser.req.vtl */,
+				577FC4032651903F00D52727 /* Query.getUser.res.vtl */,
+			);
+			path = resolvers;
+			sourceTree = "<group>";
+		};
+		577FC4042651903F00D52727 /* pipelineFunctions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pipelineFunctions;
+			sourceTree = "<group>";
+		};
+		577FC4052651903F00D52727 /* functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = functions;
+			sourceTree = "<group>";
+		};
+		683661122439A23DD01A106C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F187FF1CDED7FF52DCEA798 /* Pods-IsolationNation.debug.xcconfig */,
+				31422E383F5B34CEB2C77ADB /* Pods-IsolationNation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2AF4FE29F66F8985E8F65B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C331F1FB98200A30AD5DB2D8 /* Pods_IsolationNation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A8F4CB244B2F6300452EE9 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8F4D0244B3CC700452EE9 /* ThreadsScreen.swift */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
+		E2A8F4D4244B5FD800452EE9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8F4D7244B62C900452EE9 /* HomeScreen.swift */,
+				E217EA6724B66EF3001009C6 /* SetPostcodeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E2D649D424448BE700CD67BF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E217EA5A24B66D54001009C6 /* SignUpOrSignInViewModel.swift */,
+				E217EA5724B66D53001009C6 /* SignUpOrSignInView.swift */,
+				E217EA5824B66D54001009C6 /* SignUpView.swift */,
+				E217EA5C24B66D54001009C6 /* AwaitingConfirmationView.swift */,
+				E217EA5D24B66D54001009C6 /* SignInView.swift */,
+				E217EA5B24B66D54001009C6 /* AuthenticationStateView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E2D649DC2445A29600CD67BF /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				E2D649DF2445A37100CD67BF /* ActivityIndicator.swift */,
+				E2D649E42446ED9200CD67BF /* KeyboardAdaptive.swift */,
+				E2A8F4DF244B88F100452EE9 /* String+Postcode.swift */,
+				E2A8F4E1244B941F00452EE9 /* ErrorTypes.swift */,
+				E29191F8244C9180001969DA /* UserAvatar.swift */,
+				E29191FA244C96EB001969DA /* Color.swift */,
+				E27F9691245FE3060060948D /* Loadable.swift */,
+				E2107A0A247B12C900C1DE9B /* Loading.swift */,
+				E2107A0C247B12F000C1DE9B /* ViewModelFactory.swift */,
+				E217EA6924B67064001009C6 /* PrimaryButton.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		E2D649E12446ED2200CD67BF /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				E2D649E62446F73300CD67BF /* MessageInputBar.swift */,
+				E2D649E22446ED3300CD67BF /* MessagesScreen.swift */,
+				E2A8F4C9244990E700452EE9 /* MessageView.swift */,
+				E268545924434922006E7908 /* MessagesView.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		E2D649E82448446A00CD67BF /* Replies */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8F4C724484C1200452EE9 /* ReplyInputBar.swift */,
+				E2D649E92448448E00CD67BF /* RepliesScreen.swift */,
+				E29191FC244E12BC001969DA /* ReplyView.swift */,
+				E2D649EB244844EE00CD67BF /* RepliesView.swift */,
+				E2107A0E247B15D000C1DE9B /* MessageDetailsHeader.swift */,
+			);
+			path = Replies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18D775BC22AD944300AE281E /* IsolationNation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D775D122AD944400AE281E /* Build configuration list for PBXNativeTarget "IsolationNation" */;
+			buildPhases = (
+				62DF864D4215383778ECB4F7 /* [CP] Check Pods Manifest.lock */,
+				E217EA6B24B6729A001009C6 /* Run Swift Lint */,
+				18D775B922AD944300AE281E /* Sources */,
+				18D775BA22AD944300AE281E /* Frameworks */,
+				18D775BB22AD944300AE281E /* Resources */,
+				375B29FCDEFACC5781718CE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+				571197DF2649B145006DBD93 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = IsolationNation;
+			productName = IsolationHelp;
+			productReference = 18D775BD22AD944300AE281E /* Isolation Nation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18D775B522AD944300AE281E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1210;
+				ORGANIZATIONNAME = "Ray Wenderlich";
+				TargetAttributes = {
+					18D775BC22AD944300AE281E = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 18D775B822AD944300AE281E /* Build configuration list for PBXProject "IsolationNation" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18D775B422AD944300AE281E;
+			productRefGroup = 18D775BE22AD944300AE281E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18D775BC22AD944300AE281E /* IsolationNation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18D775BB22AD944300AE281E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577FC43A2651903F00D52727 /* nested-cloudformation-stack.yml in Resources */,
+				577FC4242651903F00D52727 /* Subscription.onCreateUser.res.vtl in Resources */,
+				577FC4572651903F00D52727 /* cloudformation-template.json in Resources */,
+				577FC4252651903F00D52727 /* Subscription.onUpdateUser.req.vtl in Resources */,
+				577FC4422651903F00D52727 /* parameters.json in Resources */,
+				577FC4562651903F00D52727 /* Query.getUser.res.vtl in Resources */,
+				577FC4432651903F00D52727 /* schema.graphql in Resources */,
+				577FC4472651903F00D52727 /* Mutation.updateUser.res.vtl in Resources */,
+				577FC4592651903F00D52727 /* tags.json in Resources */,
+				577FC4192651903F00D52727 /* CustomResources.json in Resources */,
+				577FC4502651903F00D52727 /* Mutation.createUser.req.vtl in Resources */,
+				577FC4272651903F00D52727 /* Mutation.deleteUser.res.vtl in Resources */,
+				577FC42F2651903F00D52727 /* Query.getUser.res.vtl in Resources */,
+				577FC4392651903F00D52727 /* startera40e9c89-cloudformation-template.yml in Resources */,
+				577FC40F2651903F00D52727 /* project-config.json in Resources */,
+				18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */,
+				577FC4512651903F00D52727 /* Mutation.createUser.res.vtl in Resources */,
+				577FC4282651903F00D52727 /* Query.syncUsers.res.vtl in Resources */,
+				577FC4382651903F00D52727 /* nested-cloudformation-stack.yml in Resources */,
+				577FC4332651903F00D52727 /* amplify-meta.json in Resources */,
+				577FC44D2651903F00D52727 /* Subscription.onUpdateUser.res.vtl in Resources */,
+				18D775CA22AD944400AE281E /* Preview Assets.xcassets in Resources */,
+				577FC4312651903F00D52727 /* transform.conf.json in Resources */,
+				577FC41A2651903F00D52727 /* User.json in Resources */,
+				577FC4212651903F00D52727 /* Subscription.onCreateUser.req.vtl in Resources */,
+				577FC43E2651903F00D52727 /* schema.graphql in Resources */,
+				577FC4552651903F00D52727 /* Query.getUser.req.vtl in Resources */,
+				577FC4302651903F00D52727 /* cloudformation-template.json in Resources */,
+				577FC4402651903F00D52727 /* CustomResources.json in Resources */,
+				577FC4142651903F00D52727 /* parameters.json in Resources */,
+				577FC4262651903F00D52727 /* Subscription.onUpdateUser.res.vtl in Resources */,
+				577FC4462651903F00D52727 /* Query.listUsers.res.vtl in Resources */,
+				18D775C722AD944400AE281E /* Assets.xcassets in Resources */,
+				577FC4482651903F00D52727 /* Subscription.onCreateUser.req.vtl in Resources */,
+				577FC44B2651903F00D52727 /* Subscription.onCreateUser.res.vtl in Resources */,
+				577FC4452651903F00D52727 /* Query.listUsers.req.vtl in Resources */,
+				577FC4132651903F00D52727 /* startera40e9c89-cloudformation-template.yml in Resources */,
+				577FC4202651903F00D52727 /* Mutation.updateUser.res.vtl in Resources */,
+				577FC4532651903F00D52727 /* Mutation.deleteUser.req.vtl in Resources */,
+				577FC45A2651903F00D52727 /* amplify-meta.json in Resources */,
+				577FC41C2651903F00D52727 /* schema.graphql in Resources */,
+				577FC41E2651903F00D52727 /* Query.listUsers.req.vtl in Resources */,
+				577FC4372651903F00D52727 /* parameters.json in Resources */,
+				577FC42B2651903F00D52727 /* Query.syncUsers.req.vtl in Resources */,
+				577FC4182651903F00D52727 /* README.md in Resources */,
+				577FC4362651903F00D52727 /* startera40e9c89-cloudformation-template.yml in Resources */,
+				577FC4522651903F00D52727 /* Query.syncUsers.req.vtl in Resources */,
+				FCE3D2ED05104F0389DD2EDC /* amplifyconfiguration.json in Resources */,
+				577FC4232651903F00D52727 /* Subscription.onDeleteUser.req.vtl in Resources */,
+				577FC43B2651903F00D52727 /* cloudformation-template.json in Resources */,
+				577FC41D2651903F00D52727 /* Mutation.updateUser.req.vtl in Resources */,
+				577FC45C2651903F00D52727 /* team-provider-info.json in Resources */,
+				577FC41B2651903F00D52727 /* parameters.json in Resources */,
+				577FC4322651903F00D52727 /* tags.json in Resources */,
+				577FC45B2651903F00D52727 /* README.md in Resources */,
+				577FC44C2651903F00D52727 /* Subscription.onUpdateUser.req.vtl in Resources */,
+				577FC43C2651903F00D52727 /* CustomResources.json in Resources */,
+				572B3D862651349E005DB9CD /* schema.graphql in Resources */,
+				577FC4152651903F00D52727 /* CustomResources.json in Resources */,
+				577FC4492651903F00D52727 /* Subscription.onDeleteUser.res.vtl in Resources */,
+				577FC4122651903F00D52727 /* backend-config.json in Resources */,
+				577FC4352651903F00D52727 /* backend-config.json in Resources */,
+				577FC42A2651903F00D52727 /* Mutation.createUser.res.vtl in Resources */,
+				577FC4582651903F00D52727 /* transform.conf.json in Resources */,
+				577FC43D2651903F00D52727 /* parameters.json in Resources */,
+				577FC43F2651903F00D52727 /* README.md in Resources */,
+				577FC44F2651903F00D52727 /* Query.syncUsers.res.vtl in Resources */,
+				577FC4292651903F00D52727 /* Mutation.createUser.req.vtl in Resources */,
+				577FC4222651903F00D52727 /* Subscription.onDeleteUser.res.vtl in Resources */,
+				577FC4412651903F00D52727 /* User.json in Resources */,
+				577FC42D2651903F00D52727 /* README.md in Resources */,
+				577FC4442651903F00D52727 /* Mutation.updateUser.req.vtl in Resources */,
+				577FC41F2651903F00D52727 /* Query.listUsers.res.vtl in Resources */,
+				C3C307E539F14902A2246339 /* awsconfiguration.json in Resources */,
+				577FC4162651903F00D52727 /* parameters.json in Resources */,
+				577FC44E2651903F00D52727 /* Mutation.deleteUser.res.vtl in Resources */,
+				577FC44A2651903F00D52727 /* Subscription.onDeleteUser.req.vtl in Resources */,
+				577FC4112651903F00D52727 /* local-env-info.json in Resources */,
+				577FC4542651903F00D52727 /* README.md in Resources */,
+				577FC4172651903F00D52727 /* schema.graphql in Resources */,
+				577FC4342651903F00D52727 /* cli.json in Resources */,
+				577FC42C2651903F00D52727 /* Mutation.deleteUser.req.vtl in Resources */,
+				577FC42E2651903F00D52727 /* Query.getUser.req.vtl in Resources */,
+				577FC4102651903F00D52727 /* local-aws-info.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		375B29FCDEFACC5781718CE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IsolationNation/Pods-IsolationNation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IsolationNation/Pods-IsolationNation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IsolationNation/Pods-IsolationNation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62DF864D4215383778ECB4F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IsolationNation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E217EA6B24B6729A001009C6 /* Run Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D775B922AD944300AE281E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A8F4E0244B88F100452EE9 /* String+Postcode.swift in Sources */,
+				E217EA6424B66D54001009C6 /* AwaitingConfirmationView.swift in Sources */,
+				18D775C122AD944300AE281E /* AppDelegate.swift in Sources */,
+				18D775C322AD944300AE281E /* SceneDelegate.swift in Sources */,
+				E2D649E02445A37100CD67BF /* ActivityIndicator.swift in Sources */,
+				E2A8F4D8244B62C900452EE9 /* HomeScreen.swift in Sources */,
+				E2D649E72446F73300CD67BF /* MessageInputBar.swift in Sources */,
+				E27F9692245FE3060060948D /* Loadable.swift in Sources */,
+				E2107A0F247B15D000C1DE9B /* MessageDetailsHeader.swift in Sources */,
+				E29191F9244C9180001969DA /* UserAvatar.swift in Sources */,
+				E2D649EC244844EE00CD67BF /* RepliesView.swift in Sources */,
+				E217EA6224B66D54001009C6 /* SignUpOrSignInViewModel.swift in Sources */,
+				E217EA6324B66D54001009C6 /* AuthenticationStateView.swift in Sources */,
+				E2D649DA24448C7400CD67BF /* RootView.swift in Sources */,
+				E2107A0B247B12C900C1DE9B /* Loading.swift in Sources */,
+				577FC40D2651903F00D52727 /* User+Schema.swift in Sources */,
+				E217EA6524B66D54001009C6 /* SignInView.swift in Sources */,
+				577FC40C2651903F00D52727 /* AmplifyModels.swift in Sources */,
+				577FC40E2651903F00D52727 /* User.swift in Sources */,
+				E217EA6A24B67064001009C6 /* PrimaryButton.swift in Sources */,
+				E217EA6824B66EF3001009C6 /* SetPostcodeView.swift in Sources */,
+				E2FC7E7024432F0800D5711A /* MessagesScreenViewModel.swift in Sources */,
+				E2D649E52446ED9200CD67BF /* KeyboardAdaptive.swift in Sources */,
+				E217EA6124B66D54001009C6 /* AuthenticationService.swift in Sources */,
+				E2A8F4D1244B3CC700452EE9 /* ThreadsScreen.swift in Sources */,
+				E217EA5F24B66D54001009C6 /* SignUpOrSignInView.swift in Sources */,
+				E2A8F4E2244B941F00452EE9 /* ErrorTypes.swift in Sources */,
+				E2A8F4CF244B328B00452EE9 /* ThreadsScreenViewModel.swift in Sources */,
+				E2D649E32446ED3300CD67BF /* MessagesScreen.swift in Sources */,
+				E2107A0D247B12F000C1DE9B /* ViewModelFactory.swift in Sources */,
+				E29191FF244E14A8001969DA /* RepliesScreenViewModel.swift in Sources */,
+				E2A8F4D6244B60A100452EE9 /* HomeScreenViewModel.swift in Sources */,
+				E217EA6624B66D54001009C6 /* UserSession.swift in Sources */,
+				E29191FB244C96EB001969DA /* Color.swift in Sources */,
+				E2A8F4CA244990E700452EE9 /* MessageView.swift in Sources */,
+				E2D649EA2448448E00CD67BF /* RepliesScreen.swift in Sources */,
+				E29191FD244E12BC001969DA /* ReplyView.swift in Sources */,
+				E217EA6024B66D54001009C6 /* SignUpView.swift in Sources */,
+				E25FBD8F244F274E008BFD93 /* Logger.swift in Sources */,
+				E268545A24434922006E7908 /* MessagesView.swift in Sources */,
+				E2A8F4C824484C1200452EE9 /* ReplyInputBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18D775DA22AD963800AE281E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D775DE22AD96B400AE281E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18D775CF22AD944400AE281E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18D775D022AD944400AE281E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18D775D222AD944400AE281E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F187FF1CDED7FF52DCEA798 /* Pods-IsolationNation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "IsolationNation/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/IsolationNation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.IsolationNation;
+				PRODUCT_NAME = "Isolation Nation";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18D775D322AD944400AE281E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31422E383F5B34CEB2C77ADB /* Pods-IsolationNation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "IsolationNation/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/IsolationNation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.IsolationNation;
+				PRODUCT_NAME = "Isolation Nation";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D775B822AD944300AE281E /* Build configuration list for PBXProject "IsolationNation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D775CF22AD944400AE281E /* Debug */,
+				18D775D022AD944400AE281E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D775D122AD944400AE281E /* Build configuration list for PBXNativeTarget "IsolationNation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D775D222AD944400AE281E /* Debug */,
+				18D775D322AD944400AE281E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18D775B522AD944300AE281E /* Project object */;
+}

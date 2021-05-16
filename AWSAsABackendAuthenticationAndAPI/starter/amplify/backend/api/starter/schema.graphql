@@ -1,0 +1,14 @@
+# 1
+type User
+  # 4
+  @model
+  @auth( rules: [{ allow: owner }])
+{
+  # 2
+  id: ID!
+  username: String!
+  # 3
+  sub: String!
+  postcode: String
+  createdAt: AWSDateTime
+}

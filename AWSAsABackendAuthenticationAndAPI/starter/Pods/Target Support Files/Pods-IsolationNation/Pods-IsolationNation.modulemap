@@ -1,0 +1,6 @@
+framework module Pods_IsolationNation {
+  umbrella header "Pods-IsolationNation-umbrella.h"
+
+  export *
+  module * { export * }
+}

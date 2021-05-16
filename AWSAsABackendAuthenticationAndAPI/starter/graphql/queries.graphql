@@ -1,0 +1,65 @@
+# this is an auto generated file. This will be overwritten
+query SyncUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncUsers(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      username
+      sub
+      postcode
+      createdAt
+      _version
+      _deleted
+      _lastChangedAt
+      updatedAt
+      owner
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    username
+    sub
+    postcode
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+    owner
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      username
+      sub
+      postcode
+      createdAt
+      _version
+      _deleted
+      _lastChangedAt
+      updatedAt
+      owner
+    }
+    nextToken
+    startedAt
+  }
+}
